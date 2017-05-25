@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.booking.controllers.AdministratorCottageFormController">
+    <children>
+        <HBox>
+            <children>
+                <Label alignment="CENTER_RIGHT" contentDisplay="RIGHT" prefWidth="150.0" text="%label.beds" textAlignment="RIGHT">
+                    <HBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="10.0" />
+                    </HBox.margin>
+                </Label>
+                <TextField fx:id="beds" prefHeight="25.0" prefWidth="120.0">
+                    <opaqueInsets>
+                        <Insets />
+                    </opaqueInsets>
+                    <HBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                    </HBox.margin>
+                </TextField>
+            </children>
+        </HBox>
+        <HBox>
+            <children>
+                <Label alignment="CENTER_RIGHT" contentDisplay="RIGHT" prefWidth="150.0" text="%label.parking" textAlignment="RIGHT">
+                    <HBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="10.0" />
+                    </HBox.margin>
+                </Label>
+                <CheckBox fx:id="parking" mnemonicParsing="false">
+                    <HBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="10.0" />
+                    </HBox.margin>
+                </CheckBox>
+            </children>
+        </HBox>
+        <HBox>
+            <children>
+                <Label alignment="CENTER_RIGHT" contentDisplay="RIGHT" prefWidth="150.0" text="%label.playground" textAlignment="RIGHT">
+                    <HBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="10.0" />
+                    </HBox.margin>
+                </Label>
+                <CheckBox fx:id="playground" mnemonicParsing="false">
+                    <HBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="10.0" />
+                    </HBox.margin>
+                </CheckBox>
+            </children>
+        </HBox>
+        <HBox>
+            <children>
+                <Label alignment="CENTER_RIGHT" contentDisplay="RIGHT" prefWidth="150.0" text="%label.arbour" textAlignment="RIGHT">
+                    <HBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="10.0" />
+                    </HBox.margin>
+                </Label>
+                <CheckBox fx:id="arbour" mnemonicParsing="false">
+                    <HBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="10.0" />
+                    </HBox.margin>
+                </CheckBox>
+            </children>
+        </HBox>
+        <HBox>
+            <children>
+                <Label alignment="CENTER_RIGHT" contentDisplay="RIGHT" prefWidth="150.0" text="%label.pets" textAlignment="RIGHT">
+                    <HBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="10.0" />
+                    </HBox.margin>
+                </Label>
+                <CheckBox fx:id="pets" mnemonicParsing="false">
+                    <HBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="10.0" />
+                    </HBox.margin>
+                </CheckBox>
+            </children>
+        </HBox>
+        <HBox>
+            <children>
+                <Label alignment="CENTER_RIGHT" prefWidth="150.0" text="%label.rent">
+                    <HBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="10.0" />
+                    </HBox.margin>
+                </Label>
+                <TextField fx:id="rent" prefWidth="120.0">
+                    <HBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                    </HBox.margin>
+                </TextField>
+            </children>
+        </HBox>
+        <HBox alignment="CENTER_RIGHT">
+            <children>
+                <Button defaultButton="true" mnemonicParsing="false" onAction="#save" text="%btn.save">
+                    <HBox.margin>
+                        <Insets right="3.0" top="5.0" />
+                    </HBox.margin>
+                </Button>
+                <Button cancelButton="true" mnemonicParsing="false" onAction="#cancel" text="%btn.cancel">
+                    <HBox.margin>
+                        <Insets left="2.0" top="5.0" />
+                    </HBox.margin>
+                </Button>
+            </children>
+         <VBox.margin>
+            <Insets right="5.0" />
+         </VBox.margin>
+        </HBox>
+    </children>
+    <padding>
+        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+    </padding>
+</VBox>

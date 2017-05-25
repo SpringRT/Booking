@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.booking.controllers.UserUIController">
+   <children>
+      <Button fx:id="bookButton" disable="true" mnemonicParsing="false" onAction="#book" text="%btn.book" VBox.vgrow="NEVER">
+         <VBox.margin>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </VBox.margin>
+      </Button>
+      <TableView fx:id="cottagesTable" VBox.vgrow="ALWAYS">
+        <columns>
+          <TableColumn fx:id="cottageNumberColumn" editable="false" prefWidth="75.0" text="%property.id" />
+          <TableColumn fx:id="cottageBedsColumn" editable="false" prefWidth="75.0" text="%property.cottage.beds" />
+            <TableColumn fx:id="cottageParkingColumn" editable="false" prefWidth="75.0" text="%property.cottage.parking" />
+            <TableColumn fx:id="cottagePlaygroundColumn" editable="false" prefWidth="75.0" text="%property.cottage.playground" />
+            <TableColumn fx:id="cottageArbourColumn" editable="false" prefWidth="75.0" text="%property.cottage.arbour" />
+            <TableColumn fx:id="cottagePetsColumn" editable="false" prefWidth="75.0" text="%property.cottage.pets" />
+            <TableColumn fx:id="cottageRentColumn" editable="false" prefWidth="75.0" text="%property.cottage.rent" />
+        </columns>
+         <VBox.margin>
+            <Insets />
+         </VBox.margin>
+         <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+         </columnResizePolicy>
+      </TableView>
+   </children>
+</VBox>

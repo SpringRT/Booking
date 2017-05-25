@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.booking.controllers.UserBookingFormController">
+    <children>
+        <HBox>
+            <children>
+                <Label alignment="CENTER_RIGHT" contentDisplay="RIGHT" prefWidth="150.0" text="%label.customer_name" textAlignment="RIGHT">
+                    <HBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="10.0" />
+                    </HBox.margin>
+                </Label>
+                <TextField fx:id="customerName" prefHeight="25.0" prefWidth="300.0">
+                    <opaqueInsets>
+                        <Insets />
+                    </opaqueInsets>
+                    <HBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                    </HBox.margin>
+                </TextField>
+            </children>
+        </HBox>
+        <HBox>
+            <children>
+                <Label alignment="CENTER_RIGHT" contentDisplay="RIGHT" prefWidth="150.0" text="%label.customer_phone" textAlignment="RIGHT">
+                    <HBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="10.0" />
+                    </HBox.margin>
+                </Label>
+                <TextField fx:id="customerPhone" prefHeight="25.0" prefWidth="300.0">
+                    <opaqueInsets>
+                        <Insets />
+                    </opaqueInsets>
+                    <HBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                    </HBox.margin>
+                </TextField>
+            </children>
+        </HBox>
+        <HBox>
+            <children>
+                <Label alignment="CENTER_RIGHT" contentDisplay="RIGHT" prefWidth="150.0" text="%label.arrival_date" textAlignment="RIGHT">
+                    <HBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="10.0" />
+                    </HBox.margin>
+                </Label>
+                <DatePicker fx:id="arrivalDate" prefWidth="300.0">
+                    <HBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                    </HBox.margin>
+                </DatePicker>
+            </children>
+        </HBox>
+        <HBox>
+            <children>
+                <Label alignment="CENTER_RIGHT" contentDisplay="RIGHT" prefWidth="150.0" text="%label.departure_date" textAlignment="RIGHT">
+                    <HBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="10.0" />
+                    </HBox.margin>
+                </Label>
+                <DatePicker fx:id="departureDate" prefWidth="300.0">
+                    <HBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                    </HBox.margin>
+                </DatePicker>
+            </children>
+        </HBox>
+        <HBox alignment="TOP_RIGHT">
+            <children>
+                <Button mnemonicParsing="false" onAction="#save" text="%btn.save" />
+                <Button mnemonicParsing="false" onAction="#cancel" text="%btn.cancel">
+                    <HBox.margin>
+                        <Insets left="5.0" />
+                    </HBox.margin>
+                </Button>
+            </children>
+            <VBox.margin>
+                <Insets bottom="5.0" right="5.0" top="5.0" />
+            </VBox.margin>
+        </HBox>
+    </children>
+    <padding>
+        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+    </padding>
+</VBox>

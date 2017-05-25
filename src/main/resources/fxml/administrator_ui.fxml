@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<TabPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="521.0" prefWidth="963.0" tabClosingPolicy="UNAVAILABLE" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.booking.controllers.AdministratorUIController">
+    <tabs>
+        <Tab closable="false" text="%tab.bookings">
+            <content>
+                <VBox>
+                    <children>
+                        <HBox prefHeight="3.0" prefWidth="953.0" VBox.vgrow="NEVER">
+                            <children>
+                                <Button alignment="TOP_RIGHT" mnemonicParsing="false" onAction="#createBooking" text="%btn.create" textAlignment="CENTER">
+                                    <VBox.margin>
+                                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                    </VBox.margin>
+                                </Button>
+                                <Button fx:id="editBookingButton" alignment="TOP_RIGHT" disable="true" mnemonicParsing="false" onAction="#editBooking" text="%btn.edit" textAlignment="CENTER">
+                                    <HBox.margin>
+                                        <Insets left="5.0" />
+                                    </HBox.margin>
+                                </Button>
+                                <Button fx:id="deleteBookingButton" alignment="TOP_RIGHT" disable="true" mnemonicParsing="false" onAction="#deleteBooking" text="%btn.delete" textAlignment="CENTER">
+                                    <HBox.margin>
+                                        <Insets left="5.0" />
+                                    </HBox.margin>
+                                </Button>
+                            </children>
+                            <VBox.margin>
+                                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                            </VBox.margin>
+                        </HBox>
+                        <TableView fx:id="bookingsTable" VBox.vgrow="ALWAYS">
+                            <columns>
+                                <TableColumn fx:id="bookingIdColumn" prefWidth="10.0" text="%property.id" />
+                                <TableColumn fx:id="bookingClientColumn" prefWidth="215.0" text="%property.customer_name" />
+                                <TableColumn fx:id="bookingPhoneColumn" prefWidth="169.0" text="%property.customer_phone" />
+                                <TableColumn fx:id="bookingCottageColumn" prefWidth="75.0" text="%property.cottage" />
+                                <TableColumn fx:id="bookingArrivalDateColumn" prefWidth="75.0" text="%property.arrival_date" />
+                                <TableColumn fx:id="bookingDepartureDateColumn" prefWidth="75.0" text="%property.departure_date" />
+                            </columns>
+                            <columnResizePolicy>
+                                <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                            </columnResizePolicy>
+                        </TableView>
+                    </children>
+                </VBox>
+            </content>
+        </Tab>
+        <Tab closable="false" text="%tab.cottages">
+            <content>
+                <VBox>
+                    <children>
+                        <HBox VBox.vgrow="NEVER">
+                            <children>
+                                <Button mnemonicParsing="false" onAction="#createCottage" text="%btn.create">
+                                    <VBox.margin>
+                                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                    </VBox.margin>
+                                    <opaqueInsets>
+                                        <Insets />
+                                    </opaqueInsets>
+                                    <HBox.margin>
+                                        <Insets />
+                                    </HBox.margin>
+                                </Button>
+                                <Button fx:id="editCottageButton" disable="true" mnemonicParsing="false" onAction="#editCottage" text="%btn.edit">
+                                    <HBox.margin>
+                                        <Insets left="5.0" />
+                                    </HBox.margin>
+                                </Button>
+                                <Button fx:id="deleteCottageButton" disable="true" mnemonicParsing="false" onAction="#deleteCottage" text="%btn.delete">
+                                    <HBox.margin>
+                                        <Insets left="5.0" />
+                                    </HBox.margin>
+                                </Button>
+                            </children>
+                            <padding>
+                                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                            </padding>
+                        </HBox>
+                        <TableView fx:id="cottagesTable" VBox.vgrow="ALWAYS">
+                            <columns>
+                                <TableColumn fx:id="cottageIdColumn" prefWidth="75.0" text="%property.id" />
+                                <TableColumn fx:id="cottageBedsColumn" prefWidth="75.0" text="%property.beds" />
+                                <TableColumn fx:id="cottageParkingColumn" prefWidth="75.0" text="%property.parking" />
+                                <TableColumn fx:id="cottagePlaygroundColumn" prefWidth="75.0" text="%property.playground" />
+                                <TableColumn fx:id="cottageArbourColumn" prefWidth="75.0" text="%property.arbour" />
+                                <TableColumn fx:id="cottagePetsColumn" prefWidth="75.0" text="%property.peds" />
+                                <TableColumn fx:id="cottageRentColumn" prefWidth="75.0" text="%property.rent" />
+                            </columns>
+                            <columnResizePolicy>
+                                <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                            </columnResizePolicy>
+                        </TableView>
+                    </children>
+                </VBox>
+            </content>
+        </Tab>
+    </tabs>
+</TabPane>

@@ -1,0 +1,2 @@
+insert into application_user (username, password, administrator) values ('admin', 'password', true), ('user', 'password', false);
+insert into cottage (beds, parking_lot, playground, arbour, pets, rent) values (5, true, true, true, false, 100.00), (2, false, false, false, true, 50.00), (4, true, false, true, false, 70.00);
